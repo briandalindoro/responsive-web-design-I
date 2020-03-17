@@ -46,7 +46,6 @@ align-items: center;
 	justify-content: space-around;
 	text-align: center;
     align-items: center;
-    height: 50vh;
     margin: 30px;
 
 }
@@ -74,11 +73,14 @@ section {
 }
 .textOne{
 display: flex;
-justify-content: space-between;
-margin: 20px;
+justify-content: space-around;
+width: 90%;
 
 }
+.textOne about, .textOne features {
+    justify-content: space-around;
 
+}
 .midImg{
 margin: 30px;
 }
@@ -136,6 +138,7 @@ footer {
 }
 
 @media (max-width: 800px) {
+
    .top {
         display: flex;
         flex-direction: column-reverse;
@@ -147,10 +150,17 @@ footer {
     .header-img{
         display: none;
     }
+    footer {
+        justify-content: center;
+        width: 70%;
+    }
 }
 
 
 @media (max-width: 500px) {
+    header{
+        height: 120%;
+    }
     .top {
         display: flex;
         flex-direction: column-reverse;
@@ -167,11 +177,16 @@ footer {
     .header-img {
         display: none;
     }
-
-    .links {
-        flex-direction: column-reverse;
+    .links a{
         width: 100%;
-        flex-wrap: wrap;
+        border-bottom:1px solid gray;
+        text-align: center;
+    }
+    .links {
+        flex-direction: column;
+        width: 100%;
+        align-text: center;
+
     }
 
     .textOne {
